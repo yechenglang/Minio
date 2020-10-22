@@ -23,6 +23,6 @@ min:
     endpoint: http://localhost:9000
     accessKey: minioadmin
     secretKey: minioadmin
-    defaultBucket: yechenglang
+    defaultBucket: integrate
 
 

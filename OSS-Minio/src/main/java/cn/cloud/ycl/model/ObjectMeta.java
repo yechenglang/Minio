@@ -1,4 +1,4 @@
-package model;
+package cn.cloud.ycl.model;
 
 import java.io.Serializable;
 

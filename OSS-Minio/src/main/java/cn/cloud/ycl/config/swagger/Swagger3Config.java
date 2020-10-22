@@ -1,4 +1,4 @@
-package config.swagger;
+package cn.cloud.ycl.config.swagger;
 
 import io.swagger.annotations.ApiOperation;
 import org.springframework.context.annotation.Bean;
@@ -11,6 +11,9 @@ import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
+import java.util.Arrays;
+import java.util.HashSet;
+
 /**
  * @author 叶成浪
  * @date 2020.10.22
@@ -21,11 +24,14 @@ public class Swagger3Config {
     @Bean
     public Docket createRestApi() {
         return new Docket(DocumentationType.OAS_30)
+                .pathMapping("/")
+                .enable(true)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
+                .apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.any())
-                .build();
+                .build()
+                .protocols(new HashSet<>(Arrays.asList("http", "https")));
     }
 
     private ApiInfo apiInfo() {

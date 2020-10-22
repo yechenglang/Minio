@@ -10,7 +10,7 @@ import springfox.documentation.oas.annotations.EnableOpenApi;
  * @date 2020.10.22
  */
 @EnableOpenApi
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"cn.cloud.ycl"})
 @Slf4j
 public class OssMinioApplication {
 

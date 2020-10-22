@@ -1,4 +1,4 @@
-package config.oss;
+package cn.cloud.ycl.config.oss;
 
 import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.core.JsonParseException;

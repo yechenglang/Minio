@@ -1,12 +1,12 @@
-package controller;
+package cn.cloud.ycl.controller;
 
-import config.oss.MinIoProperties;
-import config.oss.MinIoUtils;
+import cn.cloud.ycl.config.oss.MinIoProperties;
+import cn.cloud.ycl.config.oss.MinIoUtils;
 import io.minio.ObjectStat;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import model.ObjectMeta;
+import cn.cloud.ycl.model.ObjectMeta;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
