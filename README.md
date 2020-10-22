@@ -2,3 +2,4 @@
 
 spring-boot
 spring-cloud
+jdk11
