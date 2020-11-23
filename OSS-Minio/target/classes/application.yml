@@ -1,0 +1,28 @@
+server:
+  port: 8081
+
+
+spring:
+  application:
+    name: oss-minio
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 500MB
+      max-request-size: 1024MB
+  freemarker:
+    template-loader-path: /templates/
+    suffix: .html
+    cache: false
+
+
+min:
+  io:
+    enable: true
+    endpoint: http://172.16.122.223:9000
+    accessKey: minioadmin
+    secretKey: minioadmin
+    defaultBucket: integrate
+
+

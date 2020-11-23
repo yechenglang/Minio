@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "min.io",
+      "type": "cn.cloud.ycl.config.oss.MinIoProperties",
+      "sourceType": "cn.cloud.ycl.config.oss.MinIoProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "min.io.access-key",
+      "type": "java.lang.String",
+      "description": "账号",
+      "sourceType": "cn.cloud.ycl.config.oss.MinIoProperties"
+    },
+    {
+      "name": "min.io.default-bucket",
+      "type": "java.lang.String",
+      "description": "默认桶",
+      "sourceType": "cn.cloud.ycl.config.oss.MinIoProperties"
+    },
+    {
+      "name": "min.io.enable",
+      "type": "java.lang.String",
+      "description": "是否开启minio",
+      "sourceType": "cn.cloud.ycl.config.oss.MinIoProperties"
+    },
+    {
+      "name": "min.io.endpoint",
+      "type": "java.lang.String",
+      "description": "桶",
+      "sourceType": "cn.cloud.ycl.config.oss.MinIoProperties"
+    },
+    {
+      "name": "min.io.secret-key",
+      "type": "java.lang.String",
+      "description": "密码",
+      "sourceType": "cn.cloud.ycl.config.oss.MinIoProperties"
+    }
+  ],
+  "hints": []
+}
